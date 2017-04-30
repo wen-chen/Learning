@@ -18,6 +18,11 @@ Anaconda包括了科学、数学、工程、数据分析中最受欢迎的300多
 ```BASH
 conda --version
 ```
+Anaconda安装成功之后，我们首先将软件源修改为国内镜像，运行如下命令。
+```BASH
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+```
 我们现在就可以通过create命令来创建虚拟环境了。
 ```BASH
 conda create --name tensorflow python=3.5
